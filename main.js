@@ -13,7 +13,7 @@ var bot = new Bot(config);
 var buddies = {};
 
 // default prob to get a response
-var responseProbDefault = 1.0 / 20;
+var responseProbDefault = 1.0 / 50;
 
 var chance = new Chance();
 
@@ -49,7 +49,8 @@ bot.schedule('0 0 */5 * * *', postSomething);
 bot.onTweet(function(tweet, hasMention) {
   var prob = chance.floating({min: 0.0, max: 1.0});
 
-  var responseProb = buddies[tweet.user.screen_name] || responseProbDefault;
+  // var responseProb = buddies[tweet.user.screen_name] || responseProbDefault;
+  var responseProb = responseProbDefault;
 
   if (hasMention) {
     responseProb = 1;
