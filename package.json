@@ -1,0 +1,18 @@
+{
+  "name": "botanado",
+  "version": "4.0.0",
+  "description": "Botanado, the piranho returns",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "Gustavo Sampaio (@GustavoKatel)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chance": "^0.8.0",
+    "markov": "git+https://github.com/GustavoKatel/node-markov.git",
+    "node-schedule": "^0.2.9",
+    "twit": "^2.1.1"
+  }
+}
