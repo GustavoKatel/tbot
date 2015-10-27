@@ -38,35 +38,35 @@ Just another twitter bot (using markov chain)
 
 ## Events
 
-  #### onCorpusProgress( function(pos, total) )
+  ### onCorpusProgress( function(pos, total) )
 
   Emitted each after processing an entry in the corpus
 
-  #### onTweet( function(onTweet (tweet, hasMention) )
+  ### onTweet( function(onTweet (tweet, hasMention) )
 
   Emitted when there's a new tweet in the bot's timeline
 
-  #### onDirectMessaage( function(msg) )
+  ### onDirectMessaage( function(msg) )
 
   Emitted when there's a new direct message
 
 ## Util methods
 
-  #### Bot.respond(input) - Promise(text)
+  ### Bot.respond(input) - Promise(text)
 
   Generates new text based on `input`. If `input is empty, generates
   randomically a new text
 
-  #### Bot.post(text, replyId) - Promise()
+  ### Bot.post(text, replyId) - Promise()
 
   Post a tweet with text `text` and mark it as a reply to the status id `replyId`
 
-  #### Bot.humanDelay(callback)
+  ### Bot.humanDelay(callback)
 
   Calls `callback` after a reasonable amount of time to simulate a human delay.
   It needs improvement.
 
-  #### Bot.schedule(cron, callback)
+  ### Bot.schedule(cron, callback)
 
   Schedule `callback` to be executed following the cron-like arguments in `cron`
 
